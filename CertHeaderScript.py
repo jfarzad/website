@@ -16,7 +16,7 @@ List = open("C:\\Users\\Farzad\\Desktop\\hosts.txt").read().splitlines()
 rs = (grequests.get(url) for url in List)
 requests = grequests.map(rs)
 
-#https://stackoverflow.com/questions/7689941/how-can-i-retrieve-the-tls-ssl-peer-certificate-of-a-remote-host-using-python
+
 def get_certificate(host, port=443):
     context = ssl.create_default_context()
     conn = socket.create_connection((host, port))
